@@ -25,11 +25,11 @@ jobs:
           fetch-depth: 0
 
       - name: Build
-        uses: zhiern/gh-action-sdk@main
+        uses: zhiern/gh-action-sdk@Zomm-PK
         env:
           ARCH: ${{ matrix.arch }}-${{ matrix.sdk }}
           FEEDNAME: packages_ci
-          PACKAGES: OpenAppFilter luci-app-argon-config luci-app-openclash luci-theme-argon
+          PACKAGES: luci-app-oaf luci-app-argon-config luci-app-openclash luci-theme-argon
           NO_REFRESH_CHECK: true
           IGNORE_ERRORS: true
 
